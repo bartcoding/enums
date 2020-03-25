@@ -9,13 +9,9 @@ public class App {
         // initiate the variable so that it points to a random instance of the planet enum
         Planet planet = getRandomPlanet();
         //if the planet is earth, we are home
-        if (planet == Planet.EARTH) {
-            System.out.println("we are home");
-        }
-        //if the planet is not earth we are trapped in space
-        else {
-            System.out.println("help, I'm in space!");
-        }
+        Planet.EARTH.setRadius(3303);
+        System.out.println("the planet we are on: " + planet);
+        System.out.println("the radius of this planet is: " + planet.getRadius());
 
     }
 
